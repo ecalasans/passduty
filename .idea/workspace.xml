@@ -15,20 +15,23 @@
     <session id="145051413">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="554" />
+          <entry key="py" value="1237" />
+          <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="554" />
+          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="Python" value="1237" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -44,7 +47,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/passagem/apps.py">
           <provider selected="true" editor-type-id="text-editor" />
@@ -53,10 +56,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/passagem/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+            <state relative-caret-position="793">
+              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
               <folding>
-                <marker date="1536698157000" expanded="true" signature="680:907" ph="..." />
+                <marker date="1539027310000" expanded="true" signature="969:974" ph="..." />
+                <marker date="1539027310000" expanded="true" signature="1132:1137" ph="..." />
               </folding>
             </state>
           </provider>
@@ -82,9 +86,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1050" />
+    <option name="x" value="968" />
     <option name="y" value="23" />
-    <option name="width" value="1510" />
+    <option name="width" value="1592" />
     <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -93,7 +97,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,10 +113,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -165,12 +170,21 @@
       <option name="presentableId" value="Default" />
       <updated>1536601672698</updated>
     </task>
+    <task id="LOCAL-00001" summary="Iniciando modelos">
+      <created>1536698179187</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536698179187</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1050" y="23" width="1510" height="1417" extended-state="0" />
+    <frame x="968" y="23" width="1592" height="1417" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.253406" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24645162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -222,6 +236,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Iniciando modelos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iniciando modelos" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/passduty/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -238,10 +256,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/passagem/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="793">
+          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
           <folding>
-            <marker date="1536698157000" expanded="true" signature="680:907" ph="..." />
+            <marker date="1539027310000" expanded="true" signature="969:974" ph="..." />
+            <marker date="1539027310000" expanded="true" signature="1132:1137" ph="..." />
           </folding>
         </state>
       </provider>
