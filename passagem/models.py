@@ -3,17 +3,20 @@ from django.db import models
 # Create your models here.
 class Hospital(models.Model):
     nome = models.CharField(max_length=250)
+    alias = models.CharField(max_length=100, null=True)
 
     def __str__(self):
         return self.nome
 
 class Leito(models.Model):
     numero = models.SmallIntegerField()
+    categoria = models.SmallIntegerField(default=0) #0 - UTIN 1 - MR 2 - CANGURU
     status = models.CharField(max_length=2, default='V')
     hospital = models.ForeignKey(Hospital, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.numero
+        return "Leito " + str(self.numero) + " - " + str(self.hospital) + ' Cat(' + str(self.categoria) + ')'
+
 
 class Paciente(models.Model):
     nome = models.CharField(max_length=250)
@@ -22,16 +25,14 @@ class Paciente(models.Model):
     dataNasc = models.DateField()
 
     def __str__(self):
-        return self.nome
+        return self.nome + '(Leito ' + str(self.leito) + ')'
+
 
 class Medico(models.Model):
     nome = models.CharField(max_length=250)
     crm = models.CharField(max_length=8)
     user = models.CharField(max_length=50)
-    password = models.CharField(max_length=50)
 
-    def __str__(self):
-        return self.nome
 
 
 class HospMed(models.Model):
@@ -52,8 +53,8 @@ class Anotacao(models.Model):
     atbMed = models.CharField(max_length=100)
     ventilacao = models.CharField(max_length=2, default='A') #Ar ambiente, CPAP, VNI, VM
     fototerapia = models.BooleanField(default=False)
-    exames = models.CharField(default=200)
-    conduta = models.CharField(default=500)
+    exames = models.CharField(max_length=500)
+    conduta = models.CharField(max_length=500)
 
     class Meta:
         ordering = ('-dataHora', )
